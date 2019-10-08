@@ -72,11 +72,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // set kondisi dari device
                 .setConstraints(
                         // hanya berjalan saat ada koneksi yang unmetered (contoh Wifi)
-                        //Constraint.ON_UNMETERED_NETWORK,
+                        Constraint.ON_UNMETERED_NETWORK,
                         // hanya berjalan ketika device di charge
-                        Constraint.DEVICE_CHARGING,
+                        Constraint.DEVICE_CHARGING
                         // berjalan saat ada koneksi internet
-                        Constraint.ON_ANY_NETWORK
+                        //Constraint.ON_ANY_NETWORK
                         // berjalan saat device dalam kondisi idle
                         //Constraint.DEVICE_IDLE
                 )

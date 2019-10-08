@@ -55,7 +55,7 @@ public class MyJobService extends JobService {
         String city = extras.getString(EXTRAS_CITY);
 
         AsyncHttpClient client = new AsyncHttpClient();
-        String url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid" + APP_ID;
+        String url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APP_ID;
         client.get(url, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
